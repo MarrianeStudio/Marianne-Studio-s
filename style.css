@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+.name{
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 10rem;
+    
+}
+.person{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 10rem;
+    
+}
+.nosotros{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem 10rem;
+    
+}
+.slogan{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50.5%);
+    padding: 5rem 10rem;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.menu{
+    float:right;
+    line-height: 65px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu a{
+    display:block;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 500ms ease;
+    font-size: 20px;
+}
+.menu a:hover{
+    background:#3b62cc;
+    color: #fff;
+}
+.menu .submenu{
+    background: rgb(156, 151, 151);
+    box-shadow: 3px 10px 10px
+    rgba(0,0,0,0.2);
+    display:none;
+}
+.menu .submenu li a{
+    line-height: 50px;
+}
+.menu ul li a:hover + ul, .menu .submenu:hover{
+    display:block;
+}
+.contacto{
+    background:#4268d3
+}
+.inicio{
+    background:#4268d3
+}
+.equipo{
+    background:#4268d3
+}
+.sobrenosotros{
+    background:#4268d3
+}
